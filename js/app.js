@@ -46,6 +46,7 @@ photocloud.run(function($ionicPlatform) {
       $state.go('photos');
     }).catch(function(error){
       console.log('Error: '+error);
+      $scope.fbmsg = error;
     });
   }
 
